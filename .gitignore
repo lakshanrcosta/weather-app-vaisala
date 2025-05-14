@@ -1,0 +1,63 @@
+# ────────────────
+# Docker
+# ────────────────
+docker-compose.override.yml
+.docker/
+*.pid
+*.log
+
+# Docker volumes (optional, uncomment if using named volumes as folders)
+# volumes/
+
+# ────────────────
+# Environment
+# ────────────────
+.env
+.env.*
+
+# ────────────────
+# OS-Specific
+# ────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# ────────────────
+# IDEs / Editors
+# ────────────────
+
+# VSCode
+.vscode/
+.history/
+
+# JetBrains (IntelliJ/WebStorm/etc.)
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# ────────────────
+# Node.js (global cache or root-level installs)
+# ────────────────
+node_modules/
+*.tsbuildinfo
