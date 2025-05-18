@@ -1,0 +1,12 @@
+# Node and build artifacts
+node_modules
+dist
+.build
+coverage
+.cache
+
+# Config files (optional)
+.eslintrc.js
+eslint.config.js
+serverless.ts
+tsconfig.tsbuildinfo
