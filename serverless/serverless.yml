@@ -52,12 +52,15 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  patterns:
-#    - '!exclude-me.js'
-#    - '!exclude-me-dir/**'
-#    - include-me.js
-#    - include-me-dir/**
+package:
+ patterns:
+    - '!node_modules/**'
+    - 'node_modules/@project/shared/**'
+    - '../shared/**'
+    - 'dist/**'
+    - '!tests/**'
+    - '!.env'
+    - '!*.md'
 
 functions:
   hello:
