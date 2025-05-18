@@ -1,0 +1,39 @@
+{
+  "name": "serverless-aws-nodejs-typescript-file-processor",
+  "version": "1.0.0",
+  "description": "Serverless AWS Lambda with Node.js and TypeScript For File Processing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serverless offline",
+    "start": "serverless offline",
+    "deploy:dev": "serverless deploy --stage dev",
+    "deploy:prod": "serverless deploy --stage prod",
+    "remove": "serverless remove",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write ."
+  },
+  "author": "Lakshan Costa",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.123",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "serverless": "^4.14.3",
+    "serverless-esbuild": "^1.55.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.1",
+    "joi": "^17.13.3",
+    "pg": "^8.16.0",
+    "typeorm": "^0.3.24"
+  }
+}

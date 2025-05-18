@@ -1,3 +1,13 @@
 node_modules
 dist
-public
+.build
+coverage
+.cache
+
+.env
+*.js
+*.d.ts
+
+package-lock.json
+serverless.yml
+serverless.ts
