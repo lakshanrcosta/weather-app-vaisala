@@ -11,7 +11,8 @@ export const AppDataSource = new DataSource({
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
+  synchronize: true,
+  logging: true,
   entities: [User, Upload, WeatherData],
-  synchronize: true, // Should be false in production
-  logging: true
+  ssl: { rejectUnauthorized: false }
 });
