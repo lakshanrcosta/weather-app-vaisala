@@ -16,6 +16,6 @@
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", ".build", "tests", ".eslintrc.js", "*.config.js"],
+  "include": ["src/**/*.ts", "src/**/*.test.ts"],
+  "exclude": ["node_modules", ".build", "tests", ".eslintrc.js", "*.config.js"]
 }
