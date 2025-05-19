@@ -9,10 +9,13 @@
     "start": "serverless offline",
     "deploy": "serverless deploy",
     "remove": "serverless remove",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{ts,json,md,yml}\"",
-    "format:check": "prettier --check \"**/*.{ts,json,md,yml}\""
+    "format:check": "prettier --check \"**/*.{ts,json,md,yml}\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "Lakshan Costa",
   "license": "ISC",
