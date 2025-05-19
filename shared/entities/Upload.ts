@@ -4,11 +4,13 @@ import {
   Column,
   ManyToOne,
   JoinColumn,
-  CreateDateColumn
+  CreateDateColumn,
+  Unique
 } from 'typeorm';
 import { User } from './User';
 
 @Entity('uploads')
+@Unique(['filename', 'user'])
 export class Upload {
   @PrimaryGeneratedColumn()
   id: number;
