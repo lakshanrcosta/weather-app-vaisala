@@ -9,3 +9,5 @@ coverage
 *.d.ts
 
 package-lock.json
+serverless.yml
+serverless.ts
