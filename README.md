@@ -91,8 +91,48 @@ Due to this limitation, we decided to:
 ```bash
 git clone https://github.com/lakshanrcosta/weather-app-vaisala.git
 cd vaisala-weather-app
-npm install
 ```
+
+## 🔐 .env Configuration (serverless/.env)
+
+Run the following command to create the  .env file from the template and update its values accordingly.
+```bash
+cd serverless
+cp .env.sample .env
+```
+
+```env
+# Environnt | local, production
+NODE_ENV=
+
+# Required by Lambda VPC access
+SUBNET_1=
+SUBNET_2=
+SUBNET_3=
+SG_ID=
+
+# Bucket name
+BUCKET_NAME=
+
+# PostgreSQL (RDS or local)
+DB_HOST=
+DB_PORT=
+DB_NAME=
+DB_USER=
+DB_PASS=
+
+# Logger level | fatal, error, warn, info, debug, trace, silent
+LOG_LEVEL=
+
+# Lambda function Demo | true, false
+LAMBDA_DEMO_MODE=
+
+# Initial User
+INITIAL_USER_NAME=
+INITIAL_USER_EMAIL=
+INITIAL_USER_PASSWORD_HASHED=
+```
+
 
 ### 📦 Install dependencies individually
 
@@ -110,21 +150,6 @@ npm install
 ```bash
 cd serverless
 npx serverless deploy
-```
-
----
-
-## 🔐 .env Configuration (serverless/.env)
-
-```env
-DB_HOST=<your-rds-endpoint>
-DB_PORT=5432
-DB_USERNAME=<admin>
-DB_PASSWORD=<password>
-DB_NAME=weather_db
-IS_LAMBDA_DEMO_MODE=true
-AWS_REGION=us-east-1
-S3_BUCKET_NAME=vaisala-weather-uploads
 ```
 
 ---
